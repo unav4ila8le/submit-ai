@@ -33,7 +33,7 @@ export default function Home() {
       <h2 className="text-6xl font-bold text-gray-900">H2 This is a heading</h2>
       <h3 className="text-5xl font-bold text-gray-900">H3 This is a heading</h3>
       <h4 className="text-4xl font-bold text-gray-900">H4 This is a heading</h4>
-      <p className="text-gray-600">
+      <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
