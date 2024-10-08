@@ -19,6 +19,7 @@ export default function Home() {
         <Label htmlFor="airplane-mode">Airplane Mode</Label>
       </div>
       <div className="flex flex-row items-center gap-2">
+        <Badge size="xs">Badge</Badge>
         <Badge>Badge</Badge>
         <Badge size="md">Badge</Badge>
         <Badge size="lg">Badge</Badge>
@@ -26,7 +27,10 @@ export default function Home() {
         <Badge variant="outline">Badge</Badge>
         <Badge variant="destructive">Badge</Badge>
       </div>
-      <h1 className="text-7xl font-bold text-gray-900">This is a heading</h1>
+      <h1 className="text-7xl font-bold text-gray-900">H1 This is a heading</h1>
+      <h2 className="text-6xl font-bold text-gray-900">H2 This is a heading</h2>
+      <h3 className="text-5xl font-bold text-gray-900">H3 This is a heading</h3>
+      <h4 className="text-4xl font-bold text-gray-900">H4 This is a heading</h4>
       <p className="text-gray-600">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
