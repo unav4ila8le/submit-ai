@@ -4,7 +4,10 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import PageHeader from "@/components/page-header";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 
 export const metadata: Metadata = {
   title: "Submit.ai",
@@ -19,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn("min-h-screen font-sans antialiased", inter.className)}
+        className={cn("min-h-screen font-sans antialiased", inter.variable)}
       >
         <header>
           <PageHeader />
