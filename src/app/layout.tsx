@@ -24,14 +24,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={cn("min-h-screen font-sans antialiased", inter.variable)}
+        className={cn(
+          "min-h-screen font-sans antialiased transition-all",
+          inter.variable,
+        )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <header>
             <PageHeader />
           </header>
