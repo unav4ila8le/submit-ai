@@ -7,7 +7,9 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-6">
       <div className="flex flex-row gap-2">
+        <Button size="xl">Button</Button>
         <Button>Button</Button>
+        <Button variant="shadow">Button</Button>
         <Button variant="secondary">Button</Button>
         <Button variant="outline">Button</Button>
         <Button variant="destructive">Button</Button>
