@@ -1,11 +1,16 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import AutoScroll from "embla-carousel-auto-scroll";
 
 const LogoCarousel = () => {
-  const logosRef = useRef<HTMLUListElement | null>(null);
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -34,39 +39,28 @@ const LogoCarousel = () => {
   ];
 
   return (
-    <div className="inline-flex h-24 w-full flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-      <ul
-        ref={logosRef}
-        className="animate-infinite-scroll flex items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-6"
-      >
+    <Carousel
+      opts={{
+        align: "start",
+        loop: true,
+      }}
+      plugins={[AutoScroll({ startDelay: 0, speed: 1 })]}
+      className="[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+    >
+      <CarouselContent>
         {logos.map((logo) => (
-          <li key={logo.name} className="h-full">
+          <CarouselItem key={logo.name} className="basis-1/5">
             <Image
               src={getImageSrc(logo.name)}
               alt={`${logo.name} logo`}
               width={logo.width}
               height={logo.height}
-              className="h-full w-56 object-contain"
+              className="h-24 w-56 object-contain"
             />
-          </li>
+          </CarouselItem>
         ))}
-        {logos.map((logo) => (
-          <li
-            key={`${logo.name}-duplicate`}
-            className="h-full"
-            aria-hidden="true"
-          >
-            <Image
-              src={getImageSrc(logo.name)}
-              alt={`${logo.name} logo`}
-              width={logo.width}
-              height={logo.height}
-              className="h-full w-56 object-contain"
-            />
-          </li>
-        ))}
-      </ul>
-    </div>
+      </CarouselContent>
+    </Carousel>
   );
 };
 
