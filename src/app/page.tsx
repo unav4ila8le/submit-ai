@@ -45,11 +45,11 @@ export default function Home() {
           <p>Join 500,000+ writers</p>
         </div>
       </div>
-      <div className="mt-10 h-[640px] bg-gray-200">tool goes here</div>
+      <div className="mt-10 h-[640px] bg-slate-200">tool goes here</div>
       <div className="mt-12 text-center">
         <div className="mb-4 flex flex-row justify-center gap-2">
-          <CheckCircle2 className="text-gray-500" />
-          <h2 className="font-medium text-gray-500 dark:text-gray-400">
+          <CheckCircle2 className="text-slate-500" />
+          <h2 className="font-medium text-slate-500 dark:text-slate-400">
             Used by Students & Writers Around the World
           </h2>
         </div>
@@ -70,7 +70,7 @@ export default function Home() {
         </p>
         <div className="mt-16 grid grid-cols-1 gap-10 text-start md:grid-cols-2">
           <div>
-            <div className="h-80 bg-gray-200"></div>
+            <div className="h-80 bg-slate-200"></div>
             <h3 className="mt-6 text-3xl">AI Humanizer & Paraphraser</h3>
             <p className="mt-3">
               Humanize AI-generated content to bypass AI detectors like GPTZero,
@@ -79,7 +79,7 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <div className="h-80 bg-gray-200"></div>
+            <div className="h-80 bg-slate-200"></div>
             <h3 className="mt-6 text-3xl">AI Writer</h3>
             <p className="mt-3">
               Organize and generate your next paper, article, or more within
