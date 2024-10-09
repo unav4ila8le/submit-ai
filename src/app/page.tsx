@@ -7,7 +7,9 @@ export default function Home() {
   return (
     <div className="mx-auto w-full max-w-screen-xl px-4">
       <div className="mx-auto w-full max-w-4xl text-center">
-        <h1 className="text-7xl">Supercharge Your Writing With AI</h1>
+        <h1 className="text-5xl sm:text-7xl">
+          Supercharge Your Writing With AI
+        </h1>
         <p className="mt-8 text-xl">
           Transform AI-generated content into 100% human text with Submit AI.
           Save time on your writing, boost efficiency, and bypass AI detectors
@@ -43,8 +45,8 @@ export default function Home() {
         </div>
       </div>
       <div className="mt-10 h-[640px] bg-gray-200">tool goes here</div>
-      <div className="mt-12">
-        <div className="mb-4 flex flex-row items-center justify-center gap-2">
+      <div className="mt-12 text-center">
+        <div className="mb-4 flex flex-row justify-center gap-2">
           <CheckCircle2 className="text-gray-500" />
           <h2 className="font-medium text-gray-500 dark:text-gray-400">
             Used by Students & Writers Around the World

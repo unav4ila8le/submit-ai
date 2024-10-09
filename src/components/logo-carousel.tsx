@@ -49,7 +49,10 @@ const LogoCarousel = () => {
     >
       <CarouselContent>
         {logos.map((logo) => (
-          <CarouselItem key={logo.name} className="basis-1/5">
+          <CarouselItem
+            key={logo.name}
+            className="lg::basis-1/5 basis-1/2 sm:basis-1/3 md:basis-1/4"
+          >
             <Image
               src={getImageSrc(logo.name)}
               alt={`${logo.name} logo`}
