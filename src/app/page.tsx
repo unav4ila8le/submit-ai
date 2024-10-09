@@ -1,7 +1,8 @@
 import LogoCarousel from "@/components/logo-carousel";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { CheckCircle2, Pencil } from "lucide-react";
+import { Bot, CheckCircle2, Pencil } from "lucide-react";
 
 export default function Home() {
   return (
@@ -53,6 +54,40 @@ export default function Home() {
           </h2>
         </div>
         <LogoCarousel />
+      </div>
+      <div className="mt-40 text-center">
+        <Badge
+          size="lg"
+          className="gap-2 bg-primary-200 font-bold uppercase text-primary"
+        >
+          <Bot /> Complete AI Toolkit
+        </Badge>
+        <h2 className="mt-4 text-5xl sm:text-6xl">
+          Ultimate Writing Assistant
+        </h2>
+        <p className="mt-6 text-xl">
+          Features built to enhance your writing capabilities and save you time.
+        </p>
+        <div className="mt-16 grid grid-cols-1 gap-10 text-start md:grid-cols-2">
+          <div>
+            <div className="h-80 bg-gray-200"></div>
+            <h3 className="mt-6 text-3xl">AI Humanizer & Paraphraser</h3>
+            <p className="mt-3">
+              Humanize AI-generated content to bypass AI detectors like GPTZero,
+              TurnItIn, and more. Ensure your content is undetectable by all AI
+              detectors.
+            </p>
+          </div>
+          <div>
+            <div className="h-80 bg-gray-200"></div>
+            <h3 className="mt-6 text-3xl">AI Writer</h3>
+            <p className="mt-3">
+              Organize and generate your next paper, article, or more within
+              seconds, with support for custom in-text citations from the
+              internet.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

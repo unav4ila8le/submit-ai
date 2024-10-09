@@ -44,7 +44,9 @@ const LogoCarousel = () => {
         align: "start",
         loop: true,
       }}
-      plugins={[AutoScroll({ startDelay: 0, speed: 1 })]}
+      plugins={[
+        AutoScroll({ startDelay: 0, speed: 1, stopOnInteraction: false }),
+      ]}
       className="[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
     >
       <CarouselContent>
