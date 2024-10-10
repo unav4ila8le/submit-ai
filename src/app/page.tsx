@@ -1,8 +1,11 @@
+import { Bot, CheckCircle2, CircleHelpIcon, Pencil, Star } from "lucide-react";
+
 import LogoCarousel from "@/components/logo-carousel";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Bot, CheckCircle2, Pencil, Star } from "lucide-react";
+
+import { faqs } from "@/lib/faqs";
 
 export default function Home() {
   return (
@@ -16,10 +19,12 @@ export default function Home() {
           Save time on your writing, boost efficiency, and bypass AI detectors
           like TurnItIn and GPTZero.
         </p>
-        <Button size="xl" className="mt-10">
+        <Button size="xl" className="group mt-10">
           <Pencil className="mr-2" />
           Get Started
-          <span className="ml-1 text-base text-white/60">- for free</span>
+          <span className="ml-1 text-base text-white/60 transition-all group-hover:text-white">
+            - for free
+          </span>
         </Button>
         <div className="mt-6 flex flex-row items-center justify-center gap-2">
           <div className="flex flex-row items-center -space-x-2">
@@ -51,13 +56,13 @@ export default function Home() {
       <div className="mt-12 text-center">
         <div className="mb-4 flex flex-row justify-center gap-2">
           <CheckCircle2 className="text-slate-500" />
-          <h2 className="font-medium text-slate-500 dark:text-slate-400">
+          <h3 className="font-medium text-slate-500 dark:text-slate-400">
             Used by Students & Writers Around the World
-          </h2>
+          </h3>
         </div>
         <LogoCarousel />
       </div>
-      <div className="mt-40">
+      <div className="mt-24 md:mt-40">
         <div className="mx-auto max-w-4xl text-center">
           <Badge
             size="lg"
@@ -65,7 +70,7 @@ export default function Home() {
           >
             <Bot /> Complete AI Toolkit
           </Badge>
-          <h2 className="mt-4 text-5xl sm:text-6xl">
+          <h2 className="mt-6 text-4xl sm:text-6xl">
             Ultimate Writing Assistant
           </h2>
           <p className="mt-6 text-xl">
@@ -111,7 +116,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="mt-40">
+      <div className="mt-24 md:mt-40">
         <div className="mx-auto max-w-4xl text-center">
           <Badge
             size="lg"
@@ -119,7 +124,7 @@ export default function Home() {
           >
             <Star /> Reviews
           </Badge>
-          <h2 className="mt-4 text-5xl sm:text-6xl">
+          <h2 className="mt-6 text-4xl sm:text-6xl">
             Join 500,000+ writers using Phrasly
           </h2>
           <p className="mt-6 text-xl">
@@ -195,6 +200,53 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="mt-24 md:mt-40">
+        <div className="mx-auto max-w-4xl text-center">
+          <Badge
+            size="lg"
+            className="gap-2 bg-green-500/30 font-bold uppercase text-green-500"
+          >
+            <CircleHelpIcon /> Support
+          </Badge>
+          <h2 className="mt-6 text-4xl sm:text-6xl">
+            Frequently Asked Questions
+          </h2>
+          <p className="mt-6 text-xl">
+            Find answers to the most common questions about Phrasly.
+          </p>
+        </div>
+        <div className="mt-10 flex flex-col gap-6">
+          {faqs.map((faq, index) => (
+            <div
+              key={index}
+              className="rounded-xl border bg-card p-4 shadow-md"
+            >
+              <h4 className="text-lg font-normal !text-primary">
+                {faq.question}
+              </h4>
+              <p>{faq.answer}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="my-24 md:my-40">
+        <div className="mx-auto max-w-4xl text-center">
+          <h2 className="mt-4 text-4xl sm:text-6xl">
+            Try Phrasly for free today
+          </h2>
+          <p className="mt-6 text-xl">
+            Join 500,000+ students and writers who use Phrasly's AI content
+            tools to write faster and bypass AI detection.
+          </p>
+          <Button size="xl" className="group mt-6">
+            <Pencil className="mr-2" />
+            Get Started
+            <span className="ml-1 text-base text-white/60 transition-all group-hover:text-white">
+              - for free
+            </span>
+          </Button>
         </div>
       </div>
     </div>
