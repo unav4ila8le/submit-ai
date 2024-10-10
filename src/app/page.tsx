@@ -12,9 +12,9 @@ export default function Home() {
   return (
     <>
       <FAQSchema faqs={faqs} />
-      <div className="mx-auto w-full max-w-screen-xl px-4">
+      <div className="mx-auto mt-28 w-full max-w-screen-xl px-4 md:mt-32">
         <div className="mx-auto w-full max-w-4xl text-center">
-          <h1 className="text-5xl sm:text-7xl">
+          <h1 className="text-5xl/tight sm:text-7xl/tight">
             Supercharge Your Writing With AI
           </h1>
           <p className="mt-8 text-xl">
@@ -73,7 +73,7 @@ export default function Home() {
             >
               <Bot /> Complete AI Toolkit
             </Badge>
-            <h2 className="mt-6 text-4xl sm:text-6xl">
+            <h2 className="mt-6 text-4xl sm:text-6xl/tight">
               Ultimate Writing Assistant
             </h2>
             <p className="mt-6 text-xl">
@@ -127,7 +127,7 @@ export default function Home() {
             >
               <Star /> Reviews
             </Badge>
-            <h2 className="mt-6 text-4xl sm:text-6xl">
+            <h2 className="mt-6 text-4xl sm:text-6xl/tight">
               Join 500,000+ writers using Phrasly
             </h2>
             <p className="mt-6 text-xl">
@@ -214,7 +214,7 @@ export default function Home() {
             >
               <CircleHelpIcon /> Support
             </Badge>
-            <h2 className="mt-6 text-4xl sm:text-6xl">
+            <h2 className="mt-6 text-4xl sm:text-6xl/tight">
               Frequently Asked Questions
             </h2>
             <p className="mt-6 text-xl">
@@ -237,7 +237,7 @@ export default function Home() {
         </div>
         <div className="my-24 md:my-40">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="mt-4 text-4xl sm:text-6xl">
+            <h2 className="mt-4 text-4xl sm:text-6xl/tight">
               Try Phrasly for free today
             </h2>
             <p className="mt-6 text-xl">

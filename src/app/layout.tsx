@@ -30,9 +30,7 @@ export default function RootLayout({
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <header>
-            <PageHeader />
-          </header>
+          <PageHeader />
           <main>{children}</main>
         </ThemeProvider>
       </body>
