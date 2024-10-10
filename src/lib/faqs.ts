@@ -1,4 +1,9 @@
-export const faqs = [
+export interface FAQ {
+  question: string;
+  answer: string;
+}
+
+export const faqs: FAQ[] = [
   {
     question:
       "How does Phrasly ensure content is undetectable by AI detectors?",
