@@ -1,9 +1,10 @@
 import { Bot, CheckCircle2, CircleHelpIcon, Pencil, Star } from "lucide-react";
 
-import LogoCarousel from "@/components/logo-carousel";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import LogoCarousel from "@/components/logo-carousel";
+import HumanizerContainer from "@/components/humanizer-container";
 import FAQSchema from "@/components/schema/faq-schema";
 
 import { faqs } from "@/lib/faqs";
@@ -53,8 +54,8 @@ export default function Home() {
             <p>Join 500,000+ writers</p>
           </div>
         </div>
-        <div className="mt-10 h-[640px] bg-slate-200 dark:bg-slate-700">
-          tool goes here
+        <div className="mt-10">
+          <HumanizerContainer />
         </div>
         <div className="mt-12 text-center">
           <div className="mb-4 flex flex-row justify-center gap-2">
