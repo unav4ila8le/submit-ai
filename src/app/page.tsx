@@ -8,6 +8,7 @@ import HumanizerContainer from "@/components/humanizer-container";
 import FAQSchema from "@/components/schema/faq-schema";
 
 import { faqs } from "@/lib/faqs";
+import TryFree from "@/components/commons/try-free";
 
 export default function Home() {
   return (
@@ -237,22 +238,7 @@ export default function Home() {
           </div>
         </div>
         <div className="my-24 md:my-40">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="mt-4 text-4xl sm:text-6xl/tight">
-              Try Phrasly for free today
-            </h2>
-            <p className="mt-6 text-xl">
-              Join 500,000+ students and writers who use Phrasly's AI content
-              tools to write faster and bypass AI detection.
-            </p>
-            <Button size="xl" className="group mt-6">
-              <Pencil className="mr-2" />
-              Get Started
-              <span className="ml-1 text-base text-white/60 transition-all group-hover:text-white">
-                - for free
-              </span>
-            </Button>
-          </div>
+          <TryFree />
         </div>
       </div>
     </>
