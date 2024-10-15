@@ -12,7 +12,7 @@ const PageHeader: React.FC = () => {
         <div className="flex flex-1">
           <Link
             href="/"
-            className="flex flex-row items-center gap-1 text-primary"
+            className="flex flex-row items-center gap-1 text-primary transition-all hover:text-primary/80"
           >
             <Bot className="h-8 w-8" />
             <span className="mt-1 text-xl font-semibold uppercase">
