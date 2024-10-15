@@ -7,11 +7,12 @@ import { cn } from "@/lib/utils";
 
 interface PlanFeatureProps {
   feature: string;
+  highlighted: boolean;
 }
 
-const PlanFeature: React.FC<PlanFeatureProps> = ({ feature }) => (
+const PlanFeature: React.FC<PlanFeatureProps> = ({ feature, highlighted }) => (
   <li className="flex flex-row gap-2">
-    <CheckCircle2 className="h-6 w-6" />
+    <CheckCircle2 className={cn("h-6 w-6", highlighted && "text-primary")} />
     <p>{feature}</p>
   </li>
 );
@@ -70,7 +71,11 @@ const PricingPlan: React.FC<PricingPlanProps> = ({ plan }) => {
       </Button>
       <ul className="mt-6 flex flex-col gap-4">
         {features.map((feature, index) => (
-          <PlanFeature key={index} feature={feature} />
+          <PlanFeature
+            key={index}
+            feature={feature}
+            highlighted={highlighted}
+          />
         ))}
       </ul>
     </div>
