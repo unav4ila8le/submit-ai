@@ -1,8 +1,8 @@
-import { Tag, Pencil } from "lucide-react";
+import { Tag } from "lucide-react";
 import PricingTable from "@/components/pricing-table";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import TryFree from "@/components/commons/try-free";
+import { plansData } from "@/lib/plans";
 
 export default function Page() {
   return (
@@ -22,7 +22,7 @@ export default function Page() {
           annual price. No hidden fees. Cancel anytime.
         </p>
         <div className="mt-8 text-start">
-          <PricingTable />
+          <PricingTable plans={plansData} />
         </div>
       </div>
       <div className="my-24 md:my-40">
