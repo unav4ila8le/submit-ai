@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const PageHeader: React.FC = () => {
   return (
-    <header className="fixed top-0 z-10 w-full bg-white shadow-md dark:bg-[#162032]">
+    <header className="fixed top-0 z-20 w-full bg-white shadow-md dark:bg-[#162032]">
       <nav className="mx-auto flex w-full max-w-screen-xl flex-row flex-nowrap items-center justify-between p-4">
         <div className="flex flex-1">
           <Link

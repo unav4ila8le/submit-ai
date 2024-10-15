@@ -6,8 +6,87 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Switch } from "@/components/ui/switch";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+  DialogClose,
+} from "@/components/ui/dialog";
 
-const HumanizerContainer = () => {
+interface HumanizationStrengthOptionProps {
+  value: string;
+  label: string;
+}
+
+const HumanizationStrengthOption: React.FC<HumanizationStrengthOptionProps> = ({
+  value,
+  label,
+}) => (
+  <Label htmlFor={value} className="relative">
+    <RadioGroupItem
+      id={value}
+      value={value}
+      className="peer absolute h-full w-full rounded-none opacity-0"
+    />
+    <Button
+      variant="outline"
+      className="w-full peer-aria-checked:bg-primary peer-aria-checked:text-white"
+    >
+      {label}
+      <Dialog>
+        <DialogTrigger asChild>
+          <Info className="z-10 ml-2 h-4 w-4" />
+        </DialogTrigger>
+        <DialogContent className="max-w-lg">
+          <DialogHeader>
+            <DialogTitle>What is the Humanization Strength?</DialogTitle>
+          </DialogHeader>
+          <div>
+            <h4>Easy</h4>
+            <p>
+              For use in Blogs, marketing materials, or any place where AI tools
+              need to detect text. It's a great choice for clear and
+              easy-to-understand writing.
+            </p>
+          </div>
+          <div>
+            <h4>Medium</h4>
+            <p>
+              This offers the perfect blend between human-like writing and
+              top-notch quality. It's ideal for those who want a balance that
+              combines the best of both worlds.
+            </p>
+          </div>
+          <div>
+            <h4>Aggressive</h4>
+            <p>
+              If you're dealing with AI detectors that are either too forceful
+              or inconsistent, this option is for you. It provides a more human
+              touch, making it suitable for situations where a more natural feel
+              is required.{" "}
+              <span className="text-slate-900 dark:text-slate-100">
+                We recommend using this option for most text, as it's the most
+                effective. If you're experiencing quality issues, please lower
+                the strength.
+              </span>
+            </p>
+          </div>
+          <DialogFooter>
+            <DialogClose asChild>
+              <Button variant="ghost">Close</Button>
+            </DialogClose>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
+    </Button>
+  </Label>
+);
+
+const HumanizerContainer: React.FC = () => {
   return (
     <div className="flex min-h-[640px] flex-col rounded-2xl border bg-card shadow-lg">
       <div className="flex flex-col items-center justify-between gap-4 border-b px-4 py-3 md:flex-row">
@@ -19,50 +98,37 @@ const HumanizerContainer = () => {
           defaultValue="option1"
           className="flex w-full flex-col gap-2 sm:w-auto sm:flex-row"
         >
-          <Label htmlFor="option1" className="relative">
-            <RadioGroupItem
-              id="option1"
-              value="option1"
-              className="peer absolute h-full w-full rounded-none opacity-0"
-            />
-            <Button
-              variant="outline"
-              className="w-full peer-aria-checked:bg-primary peer-aria-checked:text-white"
-            >
-              Easy <Info className="ml-2 h-4 w-4" />
-            </Button>
-          </Label>
-          <Label htmlFor="option2" className="relative">
-            <RadioGroupItem
-              id="option2"
-              value="option2"
-              className="peer absolute h-full w-full rounded-none opacity-0"
-            />
-            <Button
-              variant="outline"
-              className="w-full peer-aria-checked:bg-primary peer-aria-checked:text-white"
-            >
-              Medium <Info className="ml-2 h-4 w-4" />
-            </Button>
-          </Label>
-          <Label htmlFor="option3" className="relative">
-            <RadioGroupItem
-              id="option3"
-              value="option3"
-              className="peer absolute h-full w-full rounded-none opacity-0"
-            />
-            <Button
-              variant="outline"
-              className="w-full peer-aria-checked:bg-primary peer-aria-checked:text-white"
-            >
-              Aggressive <Info className="ml-2 h-4 w-4" />
-            </Button>
-          </Label>
+          <HumanizationStrengthOption value="option1" label="Easy" />
+          <HumanizationStrengthOption value="option2" label="Medium" />
+          <HumanizationStrengthOption value="option3" label="Aggressive" />
         </RadioGroup>
         <div className="flex items-center gap-2">
           <Switch id="pro-engine" />
           <Label htmlFor="pro-engine">Pro Engine</Label>
-          <Info className="h-4 w-4" />
+          <Dialog>
+            <DialogTrigger asChild>
+              <Info className="h-4 w-4 cursor-pointer" />
+            </DialogTrigger>
+            <DialogContent className="max-w-md">
+              <DialogHeader>
+                <DialogTitle>What is the Pro Engine?</DialogTitle>
+                <DialogDescription>Pro Feature</DialogDescription>
+              </DialogHeader>
+              <p>
+                Our Pro Engine is an exclusive feature available only to our
+                "Pro" subscribers, representing a major upgrade from our
+                previous version with improvements of over 10 times the
+                capability. This engine should only be used if you would like to
+                bypass the most advanced AI detectors on the market, as this
+                model is slower and gives more varied outputs than basic.
+              </p>
+              <DialogFooter>
+                <DialogClose asChild>
+                  <Button variant="ghost">Close</Button>
+                </DialogClose>
+              </DialogFooter>
+            </DialogContent>
+          </Dialog>
         </div>
       </div>
       <div className="flex flex-grow flex-col divide-y sm:flex-row md:divide-x md:divide-y-0">
