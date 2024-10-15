@@ -130,10 +130,10 @@ export default function Home() {
               <Star /> Reviews
             </Badge>
             <h2 className="mt-6 text-4xl sm:text-6xl/tight">
-              Join 500,000+ writers using Phrasly
+              Join 500,000+ writers using Submit AI
             </h2>
             <p className="mt-6 text-xl">
-              Phrasly has helped write over 250 million words. From academic
+              Submit AI has helped write over 250 million words. From academic
               essays, journals, to top-ranking articles - all bypassing AI
               detectors.
             </p>
@@ -147,8 +147,8 @@ export default function Home() {
             <div className="col-span-4 rounded-2xl border bg-card p-6 shadow-lg xl:col-span-2">
               <blockquote className="text-lg font-semibold text-slate-900 dark:text-slate-100 sm:text-xl">
                 “I used to spend hours manually rewriting my text to bypass AI
-                detectors, but Phrasly has simplified the entire process for me
-                and gives me the peace of mind I need. Thank you Phrasly!”
+                detectors, but Submit AI has simplified the entire process for
+                me and gives me the peace of mind I need. Thank you Submit AI!”
               </blockquote>
               <div className="mt-5 flex flex-row items-center gap-2 xl:mt-16">
                 <Avatar className="h-10 w-10">
@@ -167,7 +167,7 @@ export default function Home() {
             </div>
             <div className="col-span-4 rounded-2xl border bg-card p-6 shadow-lg md:col-span-2 xl:order-first xl:col-span-1">
               <blockquote className="text-lg text-slate-700 dark:text-slate-300">
-                “I didn't think Phrasly would be able to create the quality of
+                “I didn't think Submit AI would be able to create the quality of
                 content I needed. Now it's part of my daily workflow. I love
                 it.”
               </blockquote>
@@ -188,7 +188,7 @@ export default function Home() {
             </div>
             <div className="col-span-4 rounded-2xl border bg-card p-6 shadow-lg md:col-span-2 xl:col-span-1">
               <blockquote className="text-lg text-slate-700 dark:text-slate-300">
-                “Phrasly has been a game-changer for me as a busy college
+                “Submit AI has been a game-changer for me as a busy college
                 student. It saves me so much time on essay writing by using AI!”
               </blockquote>
               <div className="mt-5 flex flex-row items-center gap-2">
@@ -220,7 +220,7 @@ export default function Home() {
               Frequently Asked Questions
             </h2>
             <p className="mt-6 text-xl">
-              Find answers to the most common questions about Phrasly.
+              Find answers to the most common questions about Submit AI.
             </p>
           </div>
           <div className="mt-10 flex flex-col gap-6">

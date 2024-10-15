@@ -6,9 +6,9 @@ export interface FAQ {
 export const faqs: FAQ[] = [
   {
     question:
-      "How does Phrasly ensure content is undetectable by AI detectors?",
+      "How does Submit AI ensure content is undetectable by AI detectors?",
     answer:
-      "Phrasly uses advanced algorithms to modify AI-generated content, making it undetectable by various AI detectors such as Originality AI, Winston AI, GPTZero, ZeroGPT, and Turnitin.",
+      "Submit AI uses advanced algorithms to modify AI-generated content, making it undetectable by various AI detectors such as Originality AI, Winston AI, GPTZero, ZeroGPT, and Turnitin.",
   },
   {
     question: "Is there a discount for the yearly plan?",
@@ -23,12 +23,12 @@ export const faqs: FAQ[] = [
   {
     question: "Does this bypass TurnItIn AI detection?",
     answer:
-      "Yes! Phrasly has consistently bypassed TurnItIn AI detection for our users. This has also been verified by third-party sources who have access to TurnItIn instructor accounts.",
+      "Yes! Submit AI has consistently bypassed TurnItIn AI detection for our users. This has also been verified by third-party sources who have access to TurnItIn instructor accounts.",
   },
   {
     question: "Will the quality of my content be compromised?",
     answer:
-      "No, Phrasly's AI is trained on high-quality content and will generate content that is similar in quality to the original content. In some cases, Phrasly's AI can even improve the quality of the content depending on the writing style that you choose.",
+      "No, Submit AI's AI is trained on high-quality content and will generate content that is similar in quality to the original content. In some cases, Submit AI's AI can even improve the quality of the content depending on the writing style that you choose.",
   },
   {
     question: "Will my content be detected for plagiarism?",
