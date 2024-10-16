@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+import { ThemeProvider } from "@/components/context/theme-provider";
 import { cn } from "@/lib/utils";
 import PageHeader from "@/components/page-header";
-import { ThemeProvider } from "@/components/context/theme-provider";
+import PageFooter from "@/components/page-footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -32,6 +33,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <PageHeader />
           <main>{children}</main>
+          <PageFooter />
         </ThemeProvider>
       </body>
     </html>
