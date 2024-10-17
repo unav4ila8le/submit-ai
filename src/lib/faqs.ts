@@ -6,33 +6,28 @@ export interface FAQ {
 export const faqs: FAQ[] = [
   {
     question:
-      "How does Submit AI ensure content is undetectable by AI detectors?",
+      "How does Submit AI ensure that humanized content is AI-undetectable?",
     answer:
-      "Submit AI uses advanced algorithms to modify AI-generated content, making it undetectable by various AI detectors such as Originality AI, Winston AI, GPTZero, ZeroGPT, and Turnitin.",
+      "Submit AI uses the most advanced algorithms available to humanize AI-generated content, making it completely undetectable by leading AI detection tools such as TurnItIn, Originality, and GPTZero.",
   },
   {
-    question: "Is there a discount for the yearly plan?",
+    question: "Does Submit AI offer an annual discount?",
     answer:
-      "Yes! If you pay for a year upfront, you'll save up to 60% compared to paying monthly.",
+      "Subscribers to our annual plan receive a 45% discount on monthly prices!",
   },
   {
-    question: "Why not use a regular paraphrasing tool?",
+    question: "Why not use ChatGPT?",
     answer:
-      "Regular paraphrasing tools are not effective at bypassing AI detectors (especially TurnItIn). We use custom algorithms to modify AI-generated content, making it undetectable by various AI detectors such as Originality AI, Winston AI, GPTZero, ZeroGPT, and Turnitin.",
+      "Submit AI has been tuned using thousands of research papers and essays to produce the highest quality essays available, something ChatGPT isn't optimized for. Submit AI's essays can also be humanized to completely avoid AI detectors and plagiarism checks.",
   },
   {
-    question: "Does this bypass TurnItIn AI detection?",
+    question: "Does Submit AI pass TurnItIn's AI and Plagiarism detection?",
     answer:
-      "Yes! Submit AI has consistently bypassed TurnItIn AI detection for our users. This has also been verified by third-party sources who have access to TurnItIn instructor accounts.",
+      "Yes! Submit AI consistently passes TurnItIn's detection. We also verify using third parties with access to TurnItIn instructor accounts.",
   },
   {
-    question: "Will the quality of my content be compromised?",
+    question: "Will the quality of my content be affected?",
     answer:
-      "No, Submit AI's AI is trained on high-quality content and will generate content that is similar in quality to the original content. In some cases, Submit AI's AI can even improve the quality of the content depending on the writing style that you choose.",
-  },
-  {
-    question: "Will my content be detected for plagiarism?",
-    answer:
-      "Absolutely not! Our AI strictly generates content that is 100% original and unique. Each time you use our humanizer, you can expect a different result each time, making your text free from plagiarism.",
+      "No! As Submit AI is trained on various different types of writing—including essays, journals, and other kinds of high-quality content—it's capable of matching any writing level and replicating the tone and style of the original content.",
   },
 ];

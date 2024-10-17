@@ -15,11 +15,12 @@ export default function Page() {
           <Tag /> Pricing
         </Badge>
         <h1 className="mt-4 text-4xl sm:text-6xl/tight">
-          Select a plan that works for you
+          Pick the plan that works for you
         </h1>
         <p className="mt-6 text-xl">
-          Gain access to all of our tools and features for a low monthly or
-          annual price. No hidden fees. Cancel anytime.
+          Get full access to all our tools and features at an affordable monthly
+          or annual price. No hidden fees or add-ons. Risk-free - cancel
+          anytime.
         </p>
         <div className="mt-8 text-start">
           <PricingTable plans={plansData} />

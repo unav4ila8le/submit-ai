@@ -17,18 +17,18 @@ export default function Home() {
       <div className="mx-auto mt-28 w-full max-w-screen-xl px-4 md:mt-32">
         <div className="mx-auto w-full max-w-4xl text-center">
           <h1 className="text-5xl/tight sm:text-7xl/tight">
-            Supercharge Your Writing With AI
+            AI-Powered Writing at Your Fingertips
           </h1>
           <p className="mt-8 text-xl">
-            Transform AI-generated content into 100% human text with Submit AI.
-            Save time on your writing, boost efficiency, and bypass AI detectors
-            like TurnItIn and GPTZero.
+            Transform AI-generated content into human text with Submit AI. Write
+            faster and boost your productivity—all 100% undetectable by TurnItIn
+            and other AI detectors.
           </p>
           <Button size="xl" className="group mt-10">
             <Pencil className="mr-2" />
             Get Started
             <span className="ml-1 text-base text-white/60 transition-all group-hover:text-white">
-              - for free
+              - it's free
             </span>
           </Button>
           <div className="mt-6 flex flex-row items-center justify-center gap-2">
@@ -52,7 +52,7 @@ export default function Home() {
                 />
               </Avatar>
             </div>
-            <p>Join 500,000+ writers</p>
+            <p>Join 3,000,000+ writers</p>
           </div>
         </div>
         <div className="mt-10">
@@ -62,7 +62,7 @@ export default function Home() {
           <div className="mb-4 flex flex-row justify-center gap-2">
             <CheckCircle2 className="text-slate-500" />
             <h3 className="font-medium text-slate-500 dark:text-slate-400">
-              Used by Students & Writers Around the World
+              Used by Students & Academics Around the World
             </h3>
           </div>
           <LogoCarousel />
@@ -73,50 +73,49 @@ export default function Home() {
               size="lg"
               className="gap-2 bg-primary/30 font-bold uppercase text-primary"
             >
-              <Bot /> Complete AI Toolkit
+              <Bot /> Complete AI Toolset
             </Badge>
             <h2 className="mt-6 text-4xl sm:text-6xl/tight">
-              Ultimate Writing Assistant
+              Your Ultimate AI Writing Assistant
             </h2>
             <p className="mt-6 text-xl">
-              Features built to enhance your writing capabilities and save you
-              time.
+              Features built to accelerate your writing and boost your
+              productivity.
             </p>
           </div>
           <div className="mt-16 grid grid-cols-1 gap-10 md:grid-cols-2">
             <div>
               <div className="h-80 bg-slate-200 dark:bg-slate-700"></div>
-              <h3 className="mt-6 text-3xl">AI Humanizer & Paraphraser</h3>
+              <h3 className="mt-6 text-3xl">AI Humanizer + Bypass</h3>
               <p className="mt-2">
-                Humanize AI-generated content to bypass AI detectors like
-                GPTZero, TurnItIn, and more. Ensure your content is undetectable
-                by all AI detectors.
+                Transform AI-generated content using our humanizer to pass AI
+                content detectors like TurnItIn and GPTZero.
               </p>
             </div>
             <div>
               <div className="h-80 bg-slate-200 dark:bg-slate-700"></div>
               <h3 className="mt-6 text-3xl">AI Writer</h3>
               <p className="mt-2">
-                Organize and generate your next paper, article, or more within
-                seconds, with support for custom in-text citations from the
-                internet.
+                Generate an essay, research paper, article, or any other type of
+                content within seconds, with in-text citations from real
+                articles, journals, and websites.
               </p>
             </div>
             <div>
               <div className="h-80 bg-slate-200 dark:bg-slate-700"></div>
-              <h3 className="mt-6 text-3xl">AI Detector</h3>
+              <h3 className="mt-6 text-3xl">AI Content Detector</h3>
               <p className="mt-2">
-                Check your content for free to see if it gets picked up by AI
-                detectors with a 99.8% accuracy rate. Our AI detector has
-                industry-leading accuracy.
+                Write with confidence—use our AI detector to see your content
+                passes AI checks from the leading AI detection tools, including
+                TurnItIn.
               </p>
             </div>
             <div>
               <div className="h-80 bg-slate-200 dark:bg-slate-700"></div>
-              <h3 className="mt-6 text-3xl">Quick Export</h3>
+              <h3 className="mt-6 text-3xl">Content Export</h3>
               <p className="mt-2">
-                Quickly export your generated content to multiple supported
-                formats of your choice such as Google Docs, Microsoft Word, etc.
+                Copy your content straight our of the editor or export as a Word
+                document.
               </p>
             </div>
           </div>
@@ -130,12 +129,11 @@ export default function Home() {
               <Star /> Reviews
             </Badge>
             <h2 className="mt-6 text-4xl sm:text-6xl/tight">
-              Join 500,000+ writers using Submit AI
+              Join 3 Million Others Using Submit AI
             </h2>
             <p className="mt-6 text-xl">
-              Submit AI has helped write over 250 million words. From academic
-              essays, journals, to top-ranking articles - all bypassing AI
-              detectors.
+              Generate essays, research papers, articles and other types of
+              content within seconds—all completely AI-undetectable.
             </p>
           </div>
           <div className="mt-10 grid grid-cols-1 gap-8 sm:grid-cols-3">

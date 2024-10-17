@@ -46,7 +46,7 @@ const HumanizationStrengthOption: React.FC<HumanizationStrengthOptionProps> = ({
             <DialogTitle>What is the Humanization Strength?</DialogTitle>
           </DialogHeader>
           <div>
-            <h4>Easy</h4>
+            <h4>Light</h4>
             <p>
               For use in Blogs, marketing materials, or any place where AI tools
               need to detect text. It's a great choice for clear and
@@ -54,7 +54,7 @@ const HumanizationStrengthOption: React.FC<HumanizationStrengthOptionProps> = ({
             </p>
           </div>
           <div>
-            <h4>Medium</h4>
+            <h4>Moderate</h4>
             <p>
               This offers the perfect blend between human-like writing and
               top-notch quality. It's ideal for those who want a balance that
@@ -62,7 +62,7 @@ const HumanizationStrengthOption: React.FC<HumanizationStrengthOptionProps> = ({
             </p>
           </div>
           <div>
-            <h4>Aggressive</h4>
+            <h4>Heavy</h4>
             <p>
               If you're dealing with AI detectors that are either too forceful
               or inconsistent, this option is for you. It provides a more human
@@ -92,30 +92,30 @@ const HumanizerContainer: React.FC = () => {
       <div className="flex flex-col items-center justify-between gap-4 border-b px-4 py-3 md:flex-row">
         <div className="flex flex-row items-center gap-2">
           <div className="h-3 w-3 rounded-full bg-green-500"></div>
-          <p>Waiting for your input...</p>
+          <p>Input your text below</p>
         </div>
         <RadioGroup
           defaultValue="option1"
           className="flex w-full flex-col gap-2 sm:w-auto sm:flex-row"
         >
-          <HumanizationStrengthOption value="option1" label="Easy" />
-          <HumanizationStrengthOption value="option2" label="Medium" />
-          <HumanizationStrengthOption value="option3" label="Aggressive" />
+          <HumanizationStrengthOption value="option1" label="Light" />
+          <HumanizationStrengthOption value="option2" label="Moderate" />
+          <HumanizationStrengthOption value="option3" label="Heavy" />
         </RadioGroup>
         <div className="flex items-center gap-2">
           <Switch id="pro-engine" />
-          <Label htmlFor="pro-engine">Pro Engine</Label>
+          <Label htmlFor="pro-engine">Ultra Mode</Label>
           <Dialog>
             <DialogTrigger asChild>
               <Info className="h-4 w-4 cursor-pointer" />
             </DialogTrigger>
             <DialogContent className="max-w-md">
               <DialogHeader>
-                <DialogTitle>What is the Pro Engine?</DialogTitle>
+                <DialogTitle>What is the Ultra Mode?</DialogTitle>
                 <DialogDescription>Pro Feature</DialogDescription>
               </DialogHeader>
               <p>
-                Our Pro Engine is an exclusive feature available only to our
+                Our Ultra Mode is an exclusive feature available only to our
                 "Pro" subscribers, representing a major upgrade from our
                 previous version with improvements of over 10 times the
                 capability. This engine should only be used if you would like to
@@ -135,7 +135,7 @@ const HumanizerContainer: React.FC = () => {
         <div className="flex w-full flex-col md:w-1/2">
           <Textarea
             autosize
-            placeholder="To rewrite or check your content, type or paste it here and click on the buttons below."
+            placeholder="Type or paste your content here and click on the buttons below to rewrite or check for AI content."
             className="h-full min-h-[256px] flex-grow rounded-none !border-none bg-transparent p-4 text-base text-slate-900 !outline-none !ring-0 !ring-offset-0 dark:text-white"
           />
           <div className="sticky bottom-0 mx-4 flex flex-col flex-wrap justify-between gap-2 bg-card py-3 md:flex-row md:items-center">
@@ -147,14 +147,14 @@ const HumanizerContainer: React.FC = () => {
                 <GraduationCap className="mr-2" /> Humanize
               </Button>
               <Button variant="outline" className="w-full md:w-auto">
-                <Flag className="mr-2" /> Check for AI
+                <Flag className="mr-2" /> AI Check
               </Button>
             </div>
           </div>
         </div>
         <div className="flex w-full flex-col md:w-1/2">
           <p className="h-full flex-grow p-4 text-slate-400 dark:text-slate-600">
-            Your humanized content will appear here.
+            Your humanized, AI-undetectable content will appear here.
           </p>
           <div className="sticky bottom-0 mx-4 flex flex-row items-center justify-between bg-card py-3">
             <p>0 Words</p>
