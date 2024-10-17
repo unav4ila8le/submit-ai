@@ -29,6 +29,9 @@ const PageHeader: React.FC = () => {
           <Link href="/affiliate" className="transition-all hover:text-primary">
             Affiliate
           </Link>
+          <Link href="/blog" className="transition-all hover:text-primary">
+            Blog
+          </Link>
         </div>
         <div className="hidden flex-1 flex-row items-center justify-end gap-3 lg:flex">
           <ModeToggle />
