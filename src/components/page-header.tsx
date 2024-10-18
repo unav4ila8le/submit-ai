@@ -1,6 +1,16 @@
 import { Bot, Menu } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import { ModeToggle } from "./mode-toggle";
 import Link from "next/link";
 
@@ -39,9 +49,47 @@ const PageHeader: React.FC = () => {
           <Button>Start writing</Button>
         </div>
         <div className="lg:hidden">
-          <Button variant="ghost" size="icon">
-            <Menu />
-          </Button>
+          <Sheet>
+            <SheetTrigger asChild>
+              <Button variant="ghost" size="icon">
+                <Menu />
+              </Button>
+            </SheetTrigger>
+            <SheetContent>
+              <div className="flex flex-col gap-6">
+                <Link
+                  href="/products"
+                  className="transition-all hover:text-primary"
+                >
+                  Products
+                </Link>
+                <Link
+                  href="/pricing"
+                  className="transition-all hover:text-primary"
+                >
+                  Pricing
+                </Link>
+                <Link
+                  href="/affiliate"
+                  className="transition-all hover:text-primary"
+                >
+                  Affiliate
+                </Link>
+                <Link
+                  href="/blog"
+                  className="transition-all hover:text-primary"
+                >
+                  Blog
+                </Link>
+                <div className="border-t"></div>
+                <Link href="#" className="transition-all hover:text-primary">
+                  Log In
+                </Link>
+                <Button className="self-start">Start writing</Button>
+                <ModeToggle />
+              </div>
+            </SheetContent>
+          </Sheet>
         </div>
       </nav>
     </header>
